@@ -6,7 +6,7 @@ const startserver=async()=>{
     try{   
         connectDB(); 
         app.listen(process.env.PORT,()=>{
-            console.log(`server running on port https://localhost:${process.env.PORT}`);
+            console.log(`server running on port http://localhost:${process.env.PORT}`);
         })
 
     }catch(error){
