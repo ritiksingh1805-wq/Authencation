@@ -39,4 +39,6 @@ export const registerService =async ({ username, email, password }) => {
         data,
     })
 
+    await sendEmail
+
 }
