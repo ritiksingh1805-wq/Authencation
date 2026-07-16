@@ -1,0 +1,11 @@
+import  {User} from "../models/auth.model.js";
+
+
+
+
+export const authenticationmidd=async (req,res,next){
+	try{
+		const token=req.headers()
+	}catch(){
+	}
+	}
