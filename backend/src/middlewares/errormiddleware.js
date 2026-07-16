@@ -1,17 +1,4 @@
-
-import { ApiError } from "../utils/Apierror.js";
-
-export const errormiddleware=(err,req,res,next)=>{
-    let statusCode=err.statusCode || 500;
-    let message=err.message || "internal error";
-
-    return res.status(statusCode).json({
-        success:false,
-        message,
-    })
-}
-
-import {Apierror} from "../utils/Apierror.js";
+import {ApiError} from "../utils/Apierror.js";
 export const  errorMiddleware=(err,req,res,next)=>{
 		let statusCode=err.statusCode || 500;
 		let message=err.message||"Internal Server Error";
